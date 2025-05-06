@@ -21,3 +21,19 @@
     --purple-950: hsl(237, 17%, 21%);
     --purple-900: hsl(237, 23%, 31%);
 }
+
+button {
+    background-color: unset;
+    border: unset;
+}
+
+header {
+    background-color: var(--orange-300);
+    background-image: url('./images/bg-pattern-intro-mobile.svg');
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
