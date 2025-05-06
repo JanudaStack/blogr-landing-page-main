@@ -20,6 +20,9 @@
     /* background gradient - body */
     --purple-950: hsl(237, 17%, 21%);
     --purple-900: hsl(237, 23%, 31%);
+
+    --heading-fnt-fmly: 'Overpass', sans-serif;
+    --paragraph-fnt-fmly: 'Ubuntu', sans-serif;
 }
 
 button {
@@ -36,4 +39,58 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 1.4rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-content h1 {
+    font-family: var(--heading-fnt-fmly);
+    text-align: center;
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.hero-content p {
+    font-family: var(--paragraph-fnt-fmly);
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-btn {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-btn button {
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+#start-for-free {
+    background-color: var(--white);
+    color: var(--orange-300);
+    font-family: var(--paragraph-fnt-fmly);
+    font-weight: 500;
+}
+
+#learn-more {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    font-family: var(--paragraph-fnt-fmly);
+    font-weight: 500;
 }
