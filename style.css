@@ -112,7 +112,7 @@ nav {
 
 main {
     margin: 15vh 0;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 main > section {
@@ -121,6 +121,12 @@ main > section {
     align-items: center;
     gap: 1.4rem;
     margin-top: 10vh;
+}
+
+main .section-header,
+main h3 {
+    text-align: center;
+    font-family: var(--heading-fnt-fmly);
 }
 
 picture {
@@ -144,11 +150,18 @@ p {
     text-align: center;
 }
 
-main .section-header,
-main h3 {
-    text-align: center;
-    font-family: var(--heading-fnt-fmly);
+.section-two {
+    background-color: var(--purple-900);
+    background-image: url('/images/bg-pattern-circles.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
 }
+
+/* Footer */
 
 footer {
     display: flex;
