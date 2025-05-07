@@ -59,6 +59,7 @@ nav {
 }
 
 .hero-content h1 {
+    /* Ensures consistent font style for all headings on the page */
     font-family: var(--heading-fnt-fmly);
     text-align: center;
     color: var(--white);
@@ -98,6 +99,21 @@ nav {
     border: 1px solid var(--white);
     font-family: var(--paragraph-fnt-fmly);
     font-weight: 500;
+}
+
+main {
+    margin-top: 15vh;
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > .heading,
+main h3 {
+    font-family: var(--heading-fnt-fmly);
 }
 
 .attribution {
