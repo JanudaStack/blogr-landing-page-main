@@ -30,6 +30,15 @@ button {
     border: unset;
 }
 
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+li {
+    list-style: none;
+}
+
 header {
     background-color: var(--orange-300);
     background-image: url('./images/bg-pattern-intro-mobile.svg');
@@ -102,7 +111,7 @@ nav {
 }
 
 main {
-    margin-top: 15vh;
+    margin: 15vh 0;
     padding: 1rem;
 }
 
@@ -151,11 +160,24 @@ footer {
     border-top-right-radius: 4rem;
 }
 
-.attribution {
-    text-align: center;
+.footer-section-heading {
+    margin-bottom: 1.2rem;
+    font-family: var(--heading-fnt-fmly);
+    color: var(--white);
+}
+
+.footer-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.footer-links a {
+    color: var(--white);
     font-family: var(--paragraph-fnt-fmly);
 }
 
-.attribution a {
-    text-decoration: none;
+.attribution {
+    text-align: center;
+    font-family: var(--paragraph-fnt-fmly);
 }
