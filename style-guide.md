@@ -88,9 +88,7 @@ competitive.
 Free, open, simple
 
 Blogr is a free and open source
-application backed by a large community of helpful developers. It
-supports features such as code syntax highlighting, RSS feeds, social
-media integration, third-party commenting tools, and works seamlessly
+application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly
 with Google Analytics. The architecture is clean and is relatively easy
 to learn.
 
