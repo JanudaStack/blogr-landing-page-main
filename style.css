@@ -167,7 +167,6 @@ p {
 }
 
 .section-two {
-    color: var(--white);
     background-color: var(--purple-900);
     background-image: url('/images/bg-pattern-circles.svg');
     background-size: cover;
