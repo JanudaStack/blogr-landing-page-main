@@ -238,6 +238,20 @@ footer {
         margin-right: 7rem;
     }
 
+    .cta-buttons {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .cta-buttons button {
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    #login {
+        color: var(--white);
+    }
+
     .menu-mobile {
         display: none;
     }
