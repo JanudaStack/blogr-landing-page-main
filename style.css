@@ -131,6 +131,7 @@ main .section-header,
 main h3 {
     text-align: center;
     font-family: var(--heading-fnt-fmly);
+    color: var(--blue-900);
 }
 
 picture {
@@ -152,6 +153,17 @@ section > article,
 p {
     font-family: var(--paragraph-fnt-fmly);
     text-align: center;
+}
+
+.sub-heading {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.section-description {
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--gray-600);
 }
 
 .section-two {
