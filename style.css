@@ -230,12 +230,12 @@ footer {
 
     .nav-buttons {
         display: flex;
+        justify-content: center; /* Ensures centering of flex items */
     }
 
     .nav-links {
         display: flex;
         gap: 1rem;
-        margin-right: 7rem;
     }
 
     .cta-buttons {
@@ -252,7 +252,22 @@ footer {
         color: var(--white);
     }
 
+    #signup {
+        border-radius: 1.5rem;
+        padding: 0.7rem 1.6rem;
+        background-color: var(--white);
+        color: var(--red-400);
+    }
+
     .menu-mobile {
         display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.3rem;
     }
 }
