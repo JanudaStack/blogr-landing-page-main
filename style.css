@@ -287,8 +287,16 @@ footer {
         padding: 0 3rem;
     }
 
-    .container picture {
-        order: 2;
+    .container .editor-img {
+        order: 1;
+    }
+
+    .container .phone-img {
+        order: -1;
+    }
+
+    .container .laptop-img {
+        order: 1;
     }
 
     .container picture img {
