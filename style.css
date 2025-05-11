@@ -138,8 +138,15 @@ main h3 {
     color: var(--blue-900);
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
 picture {
     display: flex;
+    justify-content: center;
 }
 
 picture img {
@@ -269,5 +276,33 @@ footer {
 
     .hero-content p {
         font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 968px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 0 3rem;
+    }
+
+    .container picture {
+        order: 2;
+    }
+
+    .container picture img {
+    }
+
+    .sub-heading,
+    .section-description {
+        text-align: left;
+        padding: 0.6rem 0;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
     }
 }
