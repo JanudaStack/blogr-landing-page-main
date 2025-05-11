@@ -186,6 +186,16 @@ p {
     position: relative;
     border-top-right-radius: 4rem;
     border-bottom-left-radius: 4rem;
+    margin-top: 15rem;
+}
+
+.section-wrapper {
+    margin-top: -9rem;
+}
+
+.phone-img {
+    position: relative;
+    top: -10rem;
 }
 
 /* Footer */
