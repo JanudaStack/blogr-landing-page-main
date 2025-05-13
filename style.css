@@ -31,6 +31,7 @@ button {
 }
 
 a {
+    font-family: var(--paragraph-fnt-fmly);
     text-decoration: none;
     color: unset;
 }
@@ -55,6 +56,34 @@ nav {
     padding: 1.5rem;
 }
 
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.desktop-nav a {
+    color: var(--white);
+}
+
+#login-btn {
+    color: var(--white);
+}
+
+#register-btn {
+    color: var(--orange-300);
+    background-color: var(--white);
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-buttons a {
+}
 .hero {
     display: flex;
     flex-direction: column;
