@@ -47,6 +47,7 @@ header {
     background-size: 150%;
     background-position: center;
     border-bottom-left-radius: 6rem;
+    position: relative;
 }
 
 nav {
@@ -58,6 +59,11 @@ nav {
 
 .desktop-nav-bar {
     display: none;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
 }
 
 .desktop-nav {
@@ -95,8 +101,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
-    padding: 1.4rem;
+    padding: 5rem 2rem;
 }
 
 .hero-content {
