@@ -295,3 +295,15 @@ footer {
         font-size: 1.3rem;
     }
 }
+
+@media (min-width: 992px) {
+    .container {
+        flex-direction: row;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+}
