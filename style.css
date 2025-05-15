@@ -255,10 +255,10 @@ section picture img {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     background-color: var(--purple-950);
     gap: 2.5rem;
-    padding: 5rem 0 2rem;
+    padding: 5rem 3rem 2rem;
     border-top-right-radius: 4rem;
 }
 
@@ -288,6 +288,8 @@ footer {
 }
 
 .attribution {
+    padding: 1rem;
+    background-color: var(--purple-950);
     text-align: center;
     color: var(--white);
     font-family: var(--paragraph-fnt-fmly);
@@ -344,6 +346,7 @@ footer {
     }
 
     footer {
+        align-items: flex-start;
         flex-direction: row;
     }
 
