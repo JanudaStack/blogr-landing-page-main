@@ -310,6 +310,12 @@ footer {
         align-items: flex-start;
         justify-content: space-around;
     }
+
+    .footer-links-container {
+        display: flex;
+        /* justify-content: space-around; */
+        gap: 10rem;
+    }
 }
 
 @media (min-width: 992px) {
