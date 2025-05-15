@@ -164,13 +164,6 @@ nav {
     margin: 10rem 0;
 }
 
-.section-one {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .section-header {
     font-family: var(--heading-fnt-fmly);
     padding-bottom: 2rem;
@@ -181,6 +174,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .section-description {
@@ -207,6 +201,20 @@ nav {
     color: var(--gray-600);
 }
 
+section picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section-One */
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Section-Two */
 .section-two {
     background-color: var(--purple-900);
@@ -216,11 +224,6 @@ nav {
     position: relative;
     margin: 18rem 0 0;
     padding: 10rem 0rem 5rem;
-}
-
-section picture img {
-    max-width: 100%;
-    height: auto;
 }
 
 .section-two-container {
@@ -233,7 +236,6 @@ section picture img {
 
 .section-two img {
     width: 320px;
-
     height: auto;
     position: absolute;
     margin: 0;
@@ -250,6 +252,7 @@ section picture img {
 .mobile-sec-para {
     color: var(--white);
 }
+
 /* Footer */
 
 footer {
@@ -288,11 +291,16 @@ footer {
 }
 
 .attribution {
+    font-size: 15px;
     padding: 1rem;
     background-color: var(--purple-950);
     text-align: center;
     color: var(--white);
     font-family: var(--paragraph-fnt-fmly);
+}
+
+.attribution a {
+    color: var(--red-400);
 }
 
 /* For desktop preview */
@@ -332,6 +340,10 @@ footer {
         flex-direction: row;
     }
 
+    .sec-one-des {
+        order: -1;
+    }
+
     .section-two {
         padding: 4.3rem;
     }
@@ -355,5 +367,21 @@ footer {
         flex-direction: row;
         /* justify-content: space-around; */
         gap: 15rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Section-One */
+    .editor-img img {
+        right: -10.5rem;
+        position: relative;
+        transform: translateX(5%);
+    }
+
+    /* Section-Three */
+    .laptop-img img {
+        position: relative;
+        left: -12rem;
+        transform: translateX(-5%);
     }
 }
