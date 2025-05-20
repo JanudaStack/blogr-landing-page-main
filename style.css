@@ -66,8 +66,18 @@ nav {
 }
 
 .mobile-nav {
-    display: none;
+    display: block;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.dropdown-menu {
+    display: none;
 }
 
 .desktop-nav {
