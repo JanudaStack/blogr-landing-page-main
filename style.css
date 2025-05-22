@@ -61,12 +61,8 @@ nav {
     padding: 1.5rem;
 }
 
-.desktop-nav-bar {
-    display: none;
-}
-
 .mobile-nav {
-    display: block;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -74,6 +70,10 @@ nav {
     background-color: var(--white);
     border-radius: 2rem;
     padding: 2rem;
+}
+
+.desktop-nav-bar {
+    display: none;
 }
 
 .dropdown-menu {
@@ -367,6 +367,12 @@ footer {
     }
     .container {
         flex-direction: row;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+    .desktop-nav-bar {
+        display: flex;
     }
 
     /* Section-One */
