@@ -27,111 +27,75 @@
     <body>
         <header>
             <nav>
-                <a href="#">
-                    <img src="./images/logo.svg" alt="blogr-logo" />
-                </a>
-                <div class="desktop-nav-bar">
-                    <ul class="desktop-nav">
+                <ul class="nav-bar">
+                    <li>
+                        <a href="#">
+                            <img src="./images/logo.svg" alt="blogr-logo" />
+                        </a>
+                    </li>
+                    <ul class="desktop-nav-bar">
                         <li>
                             <a href="#"
                                 >Product
                                 <img
-                                    src="/images/icon-arrow-light.svg"
+                                    src="./images/icon-arrow-light.svg"
                                     alt="arrow-down"
                             /></a>
+                            <ul
+                                class="desktop-nav-dropdown-menu product-dropdown"
+                            >
+                                <li><a href="#">Overview</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Marketplace</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Integrations</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#"
                                 >Company
                                 <img
-                                    src="/images/icon-arrow-light.svg"
+                                    src="./images/icon-arrow-light.svg"
                                     alt="arrow-down"
                             /></a>
+                            <ul
+                                class="desktop-nav-dropdown-menu company-dropdown"
+                            >
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#"
                                 >Connect
                                 <img
-                                    src="/images/icon-arrow-light.svg"
+                                    src="./images/icon-arrow-light.svg"
                                     alt="arrow-down"
                             /></a>
+                            <ul
+                                class="desktop-nav-dropdown-menu connect-dropdown"
+                            >
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                                <li><a href="#">LinkedIn</a></li>
+                            </ul>
                         </li>
                     </ul>
-                    <ul class="auth-buttons">
-                        <li><a href="" id="login-btn">Login</a></li>
-                        <li><a href="" id="register-btn">Sign Up</a></li>
+                    <ul class="cta-btns-nav">
+                        <li><a href="">Login</a></li>
+                        <li id="sign-up"><a href="">Sign Up</a></li>
                     </ul>
-                </div>
-                <img
-                    src="./images/icon-hamburger.svg"
-                    alt="hamburger"
-                    id="hamburger-menu"
-                />
-                <div class="mobile-nav">
-                    <ul>
-                        <li>
-                            <div class="mobile-nav-item">
-                                <a href="#">Product</a>
-                                <img
-                                    src="/images/icon-arrow-light.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="dropdown-menu">
-                                <ul>
-                                    <li>Overview</li>
-                                    <li>Pricing</li>
-                                    <li>Marketplace</li>
-                                    <li>Feautures</li>
-                                    <li>Integrations</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="mobile-nav-item">
-                                <a href="#">Company</a>
-                                <img
-                                    src="/images/icon-arrow-light.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="dropdown-menu">
-                                <ul>
-                                    <li>About</li>
-                                    <li>Team</li>
-                                    <li>Blog</li>
-                                    <li>Careers</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="mobile-nav-item">
-                                <a href="#">Contact</a>
-                                <img
-                                    src="/images/icon-arrow-light.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="dropdown-menu">
-                                <ul>
-                                    <li>Contact</li>
-                                    <li>Newsletter</li>
-                                    <li>LinkedIn</li>
-                                    <li>Feautures</li>
-                                    <li>Integrations</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <div class="login-signup-btns">
-                            <li>
-                                <a href="#">Login</a>
-                            </li>
-                            <li>
-                                <a href="#">Sign Up</a>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
+                    <li class="hamburger-menu">
+                        <a href="#">
+                            <img
+                                src="./images/icon-hamburger.svg"
+                                alt="hamburger"
+                            />
+                        </a>
+                    </li>
+                </ul>
             </nav>
             <section class="hero">
                 <div class="hero-content">
