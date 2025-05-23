@@ -525,6 +525,14 @@ footer {
         display: flex;
     }
 
+    .section-description {
+        align-items: flex-start;
+    }
+
+    .section-para {
+        text-align: start;
+    }
+
     /* Section-One */
     .editor-img img {
         right: -10.5rem;
