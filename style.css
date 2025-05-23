@@ -93,25 +93,43 @@ header {
     color: var(--white);
 }
 
+.desktop-nav-bar li a img {
+    transition: transform 0.3s ease; /* Smooth transition for both hover in and out */
+}
+
+.desktop-nav-bar li:hover a img {
+    transform: rotate(180deg); /* Rotate the arrow to point upwards */
+}
+
 .desktop-nav-dropdown-menu {
     position: absolute;
-    display: none;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
     flex-direction: column;
     gap: 0.7rem;
     margin-top: 1rem;
     padding: 1rem 2rem;
     background-color: var(--white);
-    transition: 0.3s;
+    transition: visibility 0.3s, opacity 0.3s, transform 0.3s; /* Smooth transition */
     border-radius: 0.7rem;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Example value */
+    transform: translateY(-10px); /* Slightly move up for animation effect */
+
+    &:hover {
+        visibility: visible;
+    }
+}
+
+.desktop-nav-bar li:hover .desktop-nav-dropdown-menu {
+    visibility: visible; /* Make the dropdown menu visible */
+    opacity: 1; /* Ensure it is fully visible */
+    transform: translateY(0); /* Reset any transform for smooth animation */
 }
 
 .desktop-nav-dropdown-menu li a {
     color: #000;
     font-weight: 400;
-
-    &:hover {
-    }
 }
 
 .product-dropdown {
