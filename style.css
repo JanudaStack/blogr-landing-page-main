@@ -57,18 +57,18 @@ header {
 /* Navigation bar */
 
 .nav-bar {
-    padding: 1.5rem 3rem;
+    padding: 1.7rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .hamburger-menu {
-    display: none;
+    display: block;
 }
 
 .desktop-nav-bar {
-    display: flex;
+    display: none;
     gap: 5rem;
     margin-right: auto;
     margin-left: 5rem;
@@ -81,7 +81,7 @@ header {
     width: 0;
     height: 2px;
     background-color: var(--white);
-    transition: width 0.3s ease-in-out;
+    transition: width 0.2s ease-in-out;
 }
 
 .desktop-nav-bar li:hover::after {
@@ -128,7 +128,7 @@ header {
 
 /* CTA Buttons Nav */
 .cta-btns-nav {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 2rem;
     font-weight: 500;
@@ -373,6 +373,10 @@ footer {
 /* For desktop preview */
 
 @media (min-width: 640px) {
+    .nav-bar {
+        padding: 2rem 4rem;
+    }
+
     .menu-desktop {
         display: flex;
         justify-content: space-between;
@@ -409,7 +413,23 @@ footer {
     #hamburger-menu {
         display: none;
     }
+
+    /* Hamburger menu */
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* Navigation bar */
+    .nav-bar {
+        padding: 2rem 6rem;
+    }
+
     .desktop-nav-bar {
+        display: flex;
+    }
+
+    .cta-btns-nav {
         display: flex;
     }
 
